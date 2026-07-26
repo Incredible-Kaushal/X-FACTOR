@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Plans</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #3b5e75;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 23px;
+      padding: 50px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #efdede;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h2 {
+      margin: 10px 0;
+    }
+    .gold { border-top: 6px solid goldenrod; }
+    .platinum { border-top: 6px solid silver; }
+    .diamond { border-top: 6px solid deepskyblue; }
+    .price {
+      font-size: 24px;
+      margin: 15px 0;
+      color: #333;
+    }
+    .btn {
+      display:inline-table;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    
+    h1{
+        font-size: 50px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+  </style>
 </head>
 <body>
-    <h1>PIYUSH KUMAR</h1>
-    <p> THIS IS SAMPLE ONE</p>
-    <h2>this is me </h2>
+
+  <h1 align="center">Choose Your Membership</h1>
+  
+  <div class="container">
+    <div class="card gold">
+      <h2>Gold Club</h2>
+      <p class="price">₹999 / month</p>
+      <p>Access to gym equipment</p>
+      <p>Basic trainer support</p>
+      <p>Free fitness assessment</p>
+      <a href="#" class="btn">Join Gold</a>
+    </div>
+
+    <div class="card platinum">
+      <h2>Platinum Pro</h2>
+      <p class="price">₹1999 / month</p>
+      <p>All Gold benefits</p>
+      <p>Group classes included</p>
+      <p>Nutrition guidance</p>
+      <a href="#" class="btn">Join Platinum</a>
+    </div>
+
+    <div class="card diamond">
+      <h2>Diamond Elite</h2>
+      <p class="price">₹2999 / month</p>
+      <p>All Platinum benefits</p>
+      <p>Personal trainer sessions</p>
+      <p>Exclusive wellness programs</p>
+      <a href="#" class="btn">Join Diamond</a>
+    </div>
+  </div>
+
 </body>
 </html>
