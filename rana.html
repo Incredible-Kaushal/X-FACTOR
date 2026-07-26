@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #111, #252525);
+
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    width: 85%;
+    min-height: 75vh;
+
+    background: rgba(2, 6, 105, 0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+
+    padding: 50px;
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 55px rgba(0,0,0,0.7);
+}
+
+.profile h1{
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+ul {
+    font-size: 18px;
+    line-height: 2;
+    padding-left: 30px;
+}
+
+li {
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: translateX(10px);
+}
+</style>
+<body>
+    <div class="profile">
+        <div>
+    <h1>Rana</h1>
+    <p>Rana Iyer is a dedicated fitness and performance trainer focused on helping individuals <br>
+         build strength, endurance, flexibility, and overall fitness. His training style combines <br>
+         functional exercises, resistance training, and structured workout routines to help members <br>
+          achieve their fitness goals effectively.
+
+As a trainer, Rana emphasizes proper form, consistency, and personalized training,<br>
+ ensuring that workouts are suitable for different fitness levels, from beginners to advanced athletes</p>
+        <ul>
+            <li>Specialized in functional and strength training</li>
+            <li>Helps clients improve stamina, mobility, and endurance</li>
+            <li>Experienced in guiding beginners through structured fitness programs</li>
+            <li>Promotes discipline, consistency, and a healthy lifestyle</li>
+        </ul>
+        </div>
+        <div>
+            <img src="img.png" alt="">
+        </div>
+
+       </div> 
+</body>
+</html>

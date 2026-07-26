@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #111, #252525);
+
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    width: 85%;
+    min-height: 75vh;
+
+    background: rgba(2, 6, 105, 0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+
+    padding: 50px;
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.profile:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 55px rgba(0,0,0,0.7);
+}
+
+.profile h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+ul {
+    font-size: 18px;
+    line-height: 2;
+    padding-left: 30px;
+}
+
+li {
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: translateX(10px);
+}
+</style>
+<body>
+    <div class="profile">
+        <div>
+        
+    <h1>Bhim</h1>
+    <p>Bhim is a passionate fitness trainer specializing in strength training, conditioning, <br>
+         and overall physical development. His training approach focuses on helping members become <br>
+          stronger, fitter, and more confident through structured and goal-oriented <br>
+
+
+    As a trainer, Bhim emphasizes proper exercise techniques, progressive training,<br>
+     and consistency. He works with beginners as well as experienced gym members,<br>
+      creating workout routines based on individual fitness levels and goals.</p>
+        <ul>
+            <li>Specialized in strength and conditioning training</li>
+            <li>Experienced in muscle building and physical transformation</li>
+            <li>Helps members improve strength, stamina, and endurance</li>
+            <li>Creates goal-based workout programs for different fitness levels</li>
+        </ul>
+        </div>
+        <div>
+            <img src="i.png" alt="">
+        </div>
+
+       </div> 
+</body>
+</html>
