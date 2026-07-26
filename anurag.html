@@ -3,11 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>workout schedules</title>
+    <style>
+      body {
+            height: auto;
+            background-color:#3b5e75;
+      }
+
+      h1 {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        font-size: 3.5em;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+      table {
+      width: 80%;
+      border-collapse:separate;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 3px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+        background: linear-gradient(135deg, #E53935, #1E3A8A);
+        color: #fff;
+        padding: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #d1dada;
+    }
+
+    tr:hover {
+        background-color: #d1e0ff;
+        transform: scale(1.02);
+        transition: 0.3s ease-in-out;
+}
+
+    .gym-btn {
+      background: linear-gradient(135deg, #0D9488,#F59E0B); 
+      color: rgb(240, 234, 234);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      text-transform: uppercase;
+    }
+
+    .gym-btn:hover {
+      background: linear-gradient(135deg, #0D9488,#F59E0B);
+      transform: scale(1.05);
+    }
+    </style>
 </head>
 <body>
-    <h1>anurag </h1>
-    <p>This is a simple paragraph.</p>
+    <h1>Workout Schedules </h1>
+    
+    <table >
+        <tr>
+            <th>Split Type</th>
+            <th>Structure</th>
+            <th>Pros</th>
+            <th>cons</th>
+        </tr>
+
+        <tr>
+            <td>Bro Split</td>
+            <td>1 muscle group per day (e.g., Chest, Back, Shoulders, Arms, Legs)</td>
+            <td>High focus on each muscle, fun for bodybuilding</td>
+            <td>Lower frequency (muscle hit only once a week)</td>
+        </tr>
+
+        <tr>
+            <td>Push/Pull/Legs (PPL)</td>
+            <td> Push (chest, shoulders, triceps), Pull (back, biceps), Legs</td>
+            <td>Balanced, higher frequency (2× per week if repeated)</td>
+            <td>Can be tiring if done 6 days/week</td>
+        </tr>
+
+        <tr>
+            <td>Upper/Lower Split</td>
+            <td>Upper body one day, lower body next</td>
+            <td>Simple, effective for strength & hypertrophy</td>
+            <td>Less isolation, more compound focus</td>
+        </tr>
+
+        <tr>
+            <td>Full Body Split</td>
+            <td>Train all major muscles in one session</td>
+            <td>Great for beginners, efficient</td>
+            <td>Sessions can be long, recovery demanding</td>
+        </tr>
+    </table>
+    
+     <button class="gym-btn"><a href="brosplit.html">Bro Split</a></button><br><br>
+     <button class="gym-btn"> <a href="ppl.html">Push/Pull/Legs</a></button><br><br>
+     <button class="gym-btn"><a href="uls.html">Upper/Lower Split</a></button><br><br>
+     <button class="gym-btn"><a href="fbs.html">Full Body Split</a></button>
 
 </body>
 </html>

@@ -1,105 +1,153 @@
+/* --- Global Resets & Setup --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html, body {
-      margin: auto;
-      height: 100%;
-      overflow-x: hidden;
-        
-    }
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #0b0c10; /* Fallback background while video loads */
+  color: #ffffff;
+  font-family: Calibri, sans-serif;
+}
 
-    h3{
-      font-family:cursive;
-    }
+/* --- Fixed Video Background --- */
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.5; /* Keeps text readable over video */
+}
 
+/* --- Heading Styling --- */
+h3 {
+  font-family: cursive;
+}
 
 .center {
   position: absolute;
-  top: 55%;
-  width: 100%;
-  text-align:left;
-  font-size: 60px;
-  padding-left:2%;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  text-align: left;
+  font-size: clamp(32px, 6vw, 60px); /* Fluid size: shrinks smoothly on mobile */
+  line-height: 1.1;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  z-index: 2;
 }
 
-
-
+/* --- Subtitle/Description Text --- */
 .center1 {
-  position:absolute;
-  top: 75%;
-  width:40%;
-  text-align:left;
-  font-size: 25px;
-  padding-left:2.2%;
-  
-
-  
+  position: absolute;
+  top: 62%;
+  left: 5%;
+  width: 85%;
+  max-width: 550px;
+  text-align: left;
+  font-size: clamp(16px, 2.5vw, 22px); /* Fluid text size */
+  line-height: 1.5;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  z-index: 2;
 }
 
+/* --- Top Navigation Buttons --- */
+/* Common button style */
+.center3 button,
+.center4 button,
+.center6 button {
+  border-radius: 20px;
+  font-size: clamp(14px, 2vw, 18px);
+  padding: 8px 22px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  backdrop-filter: blur(4px);
+}
 
+.center3 button:hover,
+.center4 button:hover,
+.center6 button:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Align buttons horizontally at top-right */
 .center3 {
   position: absolute;
-  top:15%;
-  width: 190%;
-  text-align:center;
-  font-size:25px;
-  font-family: Calibri;
-
-}
-
-.center3 button {
-    border-radius: 20px;
-    font-size:large;
+  top: 25px;
+  right: 300px;
+  z-index: 10;
+  margin: 0 20px;
 }
 
 .center4 {
   position: absolute;
-  top:22%;
-  width: 190%;
-  text-align:center;
-  font-size:17px;
-  font-family: Calibri;
-
-}
-
-.center4 button {
-    border-radius: 20px;
-    font-size:large;
+  top: 25px;
+  right: 180px;
+  z-index: 10;
+  margin: 0 20px;
 }
 
 .center6 {
   position: absolute;
-  top:29%;
-  width: 190%;
-  text-align:center;
-  font-size:17px;
-  font-family: Calibri;
-
-}
-.center6 button {
-    border-radius: 20px;
-    font-size:large;
+  top: 25px;
+  right: 20px;
+  z-index: 10;
+  margin: 0 20px;
 }
 
-
-
-img {
-  size: adjust 0;
+.cell {
+  position: absolute;
+  top: 105%;
+  left: 5%;
+  width: 90%;
+  text-align: left;
+  font-size: clamp(20px, 3vw, 28px);
 }
 
-
-
-video { 
-  width:1527px;
-  opacity: 55%;
-  object-fit:cover;
-  position:relative;
+/* --- Responsive Adjustments for Mobile Screens --- */
+@media screen and (max-width: 650px) {
+  /* Stack nav buttons neatly at the top on small screens */
+  .center3 {
+    top: 20px;
+    right: auto;
+    left: 5%;
+  }
   
+  .center4 {
+    top: 20px;
+    right: auto;
+    left: 32%;
+  }
+  
+  .center6 {
+    top: 20px;
+    right: auto;
+    left: 62%;
+  }
+
+  .center3 button,
+  .center4 button,
+  .center6 button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .center {
+    top: 35%;
+  }
+
+  .center1 {
+    top: 55%;
+    width: 90%;
+  }
 }
-
- .cell {
-    position: absolute;
-  top: 155%;
-  width: 100%;
-  text-align:left;
-  font-size: 28px;
-
-
- }
