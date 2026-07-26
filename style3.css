@@ -1,0 +1,150 @@
+/* ==========================================
+   1. RESET & BASE STYLES
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f1015;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==========================================
+   2. HEADER SECTION
+   ========================================== */
+.trainer-header {
+  text-align: center;
+  max-width: 750px;
+  margin-bottom: 3.5rem;
+}
+
+.trainer-header h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+/* Highlight color for BIOS */
+.trainer-header h1 span {
+  color: #ff3b30; /* Vibrant gym accent red */
+}
+
+.trainer-header p {
+  font-size: 1.05rem;
+  color: #a0a5b5;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.trainer-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+/* Red underline detail below "Our Trainers" */
+.trainer-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #ff3b30;
+  border-radius: 2px;
+}
+
+/* ==========================================
+   3. TRAINER CARDS GRID
+   ========================================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Individual Card Styling */
+.card {
+  background: #181a22;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 59, 48, 0.4);
+  box-shadow: 0 12px 30px rgba(255, 59, 48, 0.15);
+}
+
+/* Trainer Name Header */
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Image Container / Link */
+.card a {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Image Uniform Crop & Hover Zoom */
+.trainer-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .trainer-img {
+  transform: scale(1.05);
+}
+
+/* ==========================================
+   4. RESPONSIVE BREAKPOINTS
+   ========================================== */
+@media (max-width: 600px) {
+  body {
+    padding: 2rem 1rem;
+  }
+
+  .trainer-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .trainer-img {
+    height: 240px;
+  }
+}
