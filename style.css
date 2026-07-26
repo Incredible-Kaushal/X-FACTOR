@@ -1,10 +1,3 @@
-/* --- Global Resets & Setup --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html, body {
   width: 100%;
   min-height: 100vh;
@@ -99,55 +92,40 @@ h3 {
 
 .center6 {
   position: absolute;
-  top: 25px;
-  right: 20px;
-  z-index: 10;
-  margin: 0 20px;
+  top:29%;
+  width: 190%;
+  text-align:center;
+  font-size:17px;
+  font-family: Calibri;
+
+}
+.center6 button {
+    border-radius: 20px;
+    font-size:large;
 }
 
-.cell {
-  position: absolute;
-  top: 105%;
-  left: 5%;
-  width: 90%;
-  text-align: left;
-  font-size: clamp(20px, 3vw, 28px);
+
+
+img {
+  size: adjust 0;
 }
 
-/* --- Responsive Adjustments for Mobile Screens --- */
-@media screen and (max-width: 650px) {
-  /* Stack nav buttons neatly at the top on small screens */
-  .center3 {
-    top: 20px;
-    right: auto;
-    left: 5%;
-  }
+
+
+video { 
+  width:1527px;
+  opacity: 55%;
+  object-fit:cover;
+  position:relative;
   
-  .center4 {
-    top: 20px;
-    right: auto;
-    left: 32%;
-  }
-  
-  .center6 {
-    top: 20px;
-    right: auto;
-    left: 62%;
-  }
-
-  .center3 button,
-  .center4 button,
-  .center6 button {
-    padding: 6px 12px;
-    font-size: 13px;
-  }
-
-  .center {
-    top: 35%;
-  }
-
-  .center1 {
-    top: 55%;
-    width: 90%;
-  }
 }
+
+ .cell {
+    position: absolute;
+  top: 155%;
+  width: 100%;
+  text-align:left;
+  font-size: 28px;
+
+
+ }

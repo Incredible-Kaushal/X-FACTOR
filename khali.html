@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #111, #252525);
+
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    width: 85%;
+    min-height: 75vh;
+
+    background: rgba(2, 6, 105, 0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+
+    padding: 50px;
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 55px rgba(0,0,0,0.7);
+}
+
+.profile h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+ul {
+    font-size: 18px;
+    line-height: 2;
+    padding-left: 30px;
+}
+
+li {
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: translateX(10px);
+}
+</style>
+<body>
+    <div class="profile">
+        <div>
+    <h1>Khali</h1>
+    <p>The Great Khali is an experienced strength and fitness trainer known for his powerful physique, <br>
+        discipline, and dedication to fitness. With years of experience in strength training and professional wrestling,<br>
+         he brings practical knowledge of muscle development, endurance, conditioning, and workout discipline.</p>
+
+    <p>As a trainer, he focuses on helping members improve their strength, muscle mass,<br>
+         stamina, and overall physical fitness. His training approach combines weight training,<br>
+          functional exercises, proper workout techniques, and consistent progression</p>
+        <ul>
+            <li>Specialized in strength and muscle-building training</li>
+            <li>Helps trainees improve strength, stamina, endurance, and confidenc</li>
+            <li>Experienced in designing workouts for different fitness level</li>
+            <li>Promotes consistency, healthy habits, and long-term fitness</li>
+        </ul>
+        </div>
+        <div>
+            <img src="ima.png" alt="">
+        </div>
+
+    </div>
+</body>
+</html>

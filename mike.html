@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+
+      background: linear-gradient(135deg, #111, #252525);
+
+      color: white;
+      font-family: Arial, sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile {
+      width: 85%;
+      min-height: 75vh;
+
+      background: rgba(2, 6, 105, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+
+      padding: 50px;
+      border-radius: 25px;
+
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+
+      transition: 0.4s;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .profile:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.7);
+    }
+
+    .profile h1 {
+      font-size: 55px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    ul {
+      font-size: 18px;
+      line-height: 2;
+      padding-left: 30px;
+    }
+
+    li {
+      transition: 0.3s;
+    }
+
+    li:hover {
+      transform: translateX(10px);
+    }
+
+  </style>
+  <body>
+    
+    <div class="profile">
+      
+      <div>
+        <h1>Mike</h1>
+        <p>
+          Mike is a dedicated fitness trainer specializing in bodybuilding,
+          strength training, <br />
+          and muscle development. His training approach focuses on building a
+          strong physique <br />
+          while improving endurance, mobility, and overall fitness. As a
+          trainer, Mike helps members follow <br />
+          structured workout routines, proper lifting techniques, and
+          progressive training . He works with both <br />beginners and
+          experienced gym members to help them achieve their fitness goals
+          safely and effectively
+        </p>
+        <ul>
+          <li>Specialized in bodybuilding and strength training</li>
+          <li>Experienced in muscle building and physique development</li>
+          <li>Creates personalized workout plans based on individual goals</li>
+          <li>Promotes consistency, discipline, and long-term fitness</li>
+        </ul>
+      </div>
+      <div>
+        <img src="image.png" alt="" class="img" />  
+      </div>
+    </div>
+  </body>
+</html>
