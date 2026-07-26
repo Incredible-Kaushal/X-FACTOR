@@ -1,0 +1,175 @@
+<<<<<<< HEAD
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3b5e75;
+    color: #1f1f1f;
+}
+.trainer-header{
+    text-align: center;
+    padding: 30px 20px 10px;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.trainer-header p{
+    font-size: 17px;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+.cards{
+    display: flex;
+    gap: 30px;
+    width: 95%;
+    margin: 40px auto;
+}
+
+.card{
+    flex: 1;
+    min-width: 0;
+    background: rgb(164, 186, 218);
+    border-radius: 20px;
+    border: 1px solid#e2e8f0;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    overflow: hidden;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(37,99,235,0.25);
+    transition: 0.3s;
+}
+.card h3{
+    margin: 15px 0;
+    font-size: 30px;
+}
+.trainer-img {
+    width: 100%;
+    height: 490px;
+    margin-top: 25px;
+
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+
+    transition: 0.4s;
+}
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.card:hover .trainer-img {
+    transform: scale(1.05);
+}
+=======
+html, body {
+      margin: auto;
+      height: 100%;
+      overflow-x: hidden;
+        
+    }
+
+    h3{
+      font-family:cursive;
+    }
+
+
+.center {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  text-align:left;
+  font-size: 60px;
+  padding-left:2%;
+}
+
+
+
+.center1 {
+  position:absolute;
+  top: 75%;
+  width:40%;
+  text-align:left;
+  font-size: 25px;
+  padding-left:2.2%;
+  
+
+  
+}
+
+
+.center3 {
+  position: absolute;
+  top:15%;
+  width: 190%;
+  text-align:center;
+  font-size:25px;
+  font-family: Calibri;
+
+}
+
+.center3 button {
+    border-radius: 20px;
+    font-size:large;
+}
+
+.center4 {
+  position: absolute;
+  top:22%;
+  width: 190%;
+  text-align:center;
+  font-size:17px;
+  font-family: Calibri;
+
+}
+
+.center4 button {
+    border-radius: 20px;
+    font-size:large;
+}
+
+.center6 {
+  position: absolute;
+  top:29%;
+  width: 190%;
+  text-align:center;
+  font-size:17px;
+  font-family: Calibri;
+
+}
+.center6 button {
+    border-radius: 20px;
+    font-size:large;
+}
+
+
+
+img {
+  size: adjust 0;
+}
+
+
+
+video { 
+  width:1527px;
+  opacity: 55%;
+  object-fit:cover;
+  position:relative;
+  
+}
+
+ .cell {
+    position: absolute;
+  top: 155%;
+  width: 100%;
+  text-align:left;
+  font-size: 28px;
+
+
+ }
+>>>>>>> 4bca7f9ce19320a39bbed428ac31d86e1d8c23ad
